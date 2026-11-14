@@ -1,0 +1,63 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=System.Runtime">
+  <sys:String x:Key="AppTitle">Загрузчик VexHub</sys:String>
+  <sys:String x:Key="Eyebrow">ЗАГРУЗЧИК VEXHUB</sys:String>
+  <sys:String x:Key="Heading">Запуск VexHub</sys:String>
+  <sys:String x:Key="Subheading">Внешний клиент · только чтение · без инъекций</sys:String>
+  <sys:String x:Key="SessionLabel">СЕССИЯ</sys:String>
+  <sys:String x:Key="BadgeIdle">ГОТОВ</sys:String>
+  <sys:String x:Key="BadgeRunning">ЗАПУСК</sys:String>
+  <sys:String x:Key="BadgeActive">АКТИВНА</sys:String>
+  <sys:String x:Key="BadgeError">ОШИБКА</sys:String>
+  <sys:String x:Key="ProgressIdle">Готов к запуску</sys:String>
+  <sys:String x:Key="ProgressBusy">Запуск клиента</sys:String>
+  <sys:String x:Key="ProgressDone">Клиент запущен</sys:String>
+  <sys:String x:Key="ProgressFailed">Запуск не удался</sys:String>
+  <sys:String x:Key="LaunchStart">Запустить VexHub</sys:String>
+  <sys:String x:Key="LaunchBusy">Запуск…</sys:String>
+  <sys:String x:Key="LaunchClose">Закрыть лоадер</sys:String>
+  <sys:String x:Key="LaunchRetry">Повторить</sys:String>
+  <sys:String x:Key="LogTitle">ЖУРНАЛ СЕССИИ</sys:String>
+  <sys:String x:Key="LogClear">Очистить</sys:String>
+  <sys:String x:Key="ModeOffline">Внешний клиент · без инъекций</sys:String>
+  <sys:String x:Key="LinkSite">Сайт</sys:String>
+  <sys:String x:Key="LinkSource">Код</sys:String>
+  <sys:String x:Key="LinkDocs">Документация</sys:String>
+  <sys:String x:Key="MinTooltip">Свернуть</sys:String>
+  <sys:String x:Key="CloseTooltip">Закрыть</sys:String>
+  <sys:String x:Key="LangTooltip">Сменить язык</sys:String>
+
+  <sys:String x:Key="StepClientTitle">Поиск клиента VexHub</sys:String>
+  <sys:String x:Key="StepClientPending">В очереди</sys:String>
+  <sys:String x:Key="StepClientActive">Поиск vexhub.exe…</sys:String>
+  <sys:String x:Key="StepClientDone">vexhub.exe · готов</sys:String>
+  <sys:String x:Key="StepClientError">Не найден</sys:String>
+  <sys:String x:Key="StepClientFound">vexhub.exe · v{0}</sys:String>
+
+  <sys:String x:Key="StepGameTitle">Проверка Counter-Strike 2</sys:String>
+  <sys:String x:Key="StepGamePending">В очереди</sys:String>
+  <sys:String x:Key="StepGameActive">Сканирование процессов…</sys:String>
+  <sys:String x:Key="StepGameDone">cs2.exe найден</sys:String>
+  <sys:String x:Key="StepGameWarn">Не запущен</sys:String>
+  <sys:String x:Key="StepGameError">Ошибка проверки</sys:String>
+  <sys:String x:Key="StepGamePid">cs2.exe · pid {0}</sys:String>
+  <sys:String x:Key="StepGameWarnDetail">не запущен · VexHub подождёт</sys:String>
+
+  <sys:String x:Key="StepStartTitle">Запуск VexHub</sys:String>
+  <sys:String x:Key="StepStartPending">В очереди</sys:String>
+  <sys:String x:Key="StepStartActive">Запуск клиента…</sys:String>
+  <sys:String x:Key="StepStartDone">Запущен</sys:String>
+  <sys:String x:Key="StepStartError">Не удалось запустить</sys:String>
+  <sys:String x:Key="StepStartPid">запущен · pid {0}</sys:String>
+  <sys:String x:Key="StepStartRunning">уже запущен · pid {0}</sys:String>
+
+  <sys:String x:Key="StepReadyTitle">Подготовка сессии</sys:String>
+  <sys:String x:Key="StepReadyPending">В очереди</sys:String>
+  <sys:String x:Key="StepReadyActive">Завершение…</sys:String>
+  <sys:String x:Key="StepReadyDone">Готово · нажмите Insert</sys:String>
+  <sys:String x:Key="StepReadyError">Ошибка</sys:String>
+
+  <sys:String x:Key="ErrorVexHubMissing">vexhub.exe не найден рядом с лоадером. Положите лоадер в папку VexHub.</sys:String>
+  <sys:String x:Key="ErrorStart">Не удалось запустить vexhub.exe: {0}</sys:String>
+</ResourceDictionary>

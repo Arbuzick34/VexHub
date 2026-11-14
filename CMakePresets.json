@@ -1,0 +1,65 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 25,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "msvc-base",
+      "hidden": true,
+      "generator": "Visual Studio 17 2022",
+      "architecture": "x64"
+    },
+    {
+      "name": "debug",
+      "displayName": "vexhub Debug (console)",
+      "description": "Debug build with console and diagnostics",
+      "inherits": "msvc-base",
+      "binaryDir": "${sourceDir}/build/debug"
+    },
+    {
+      "name": "release",
+      "displayName": "vexhub Release (clean)",
+      "description": "Optimized release build without the console module",
+      "inherits": "msvc-base",
+      "binaryDir": "${sourceDir}/build/release",
+      "cacheVariables": {
+        "VEXHUB_PERF_LOG": "OFF",
+        "VEXHUB_WINDOWED_PROFILE": "OFF",
+        "VEXHUB_WINDOWED_SESSION": "OFF",
+        "VEXHUB_OUTPUT_NAME": "vexhub"
+      }
+    },
+    {
+      "name": "profile",
+      "displayName": "vexhub optimized CPU profiling",
+      "inherits": "release",
+      "binaryDir": "${sourceDir}/build/profile",
+      "cacheVariables": {
+        "VEXHUB_PERF_LOG": "ON",
+        "VEXHUB_OUTPUT_NAME": "vexhub-profile"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "debug",
+      "displayName": "Build vexhub Debug",
+      "configurePreset": "debug",
+      "configuration": "Debug"
+    },
+    {
+      "name": "release",
+      "displayName": "Build vexhub Release",
+      "configurePreset": "release",
+      "configuration": "Release"
+    },
+    {
+      "name": "profile",
+      "configurePreset": "profile",
+      "configuration": "Release"
+    }
+  ]
+}

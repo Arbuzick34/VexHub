@@ -1,0 +1,9 @@
+{
+  "id": "vexhub_web_radar",
+  "name": "VexHub Web Radar",
+  "version": "1.0.0",
+  "author": "VexHub",
+  "description": "Opt-in private web radar with a local server and temporary tunnel",
+  "api_version": 1,
+  "entry": "main.lua"
+}

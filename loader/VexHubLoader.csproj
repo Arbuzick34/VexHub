@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>VexHubLoader</AssemblyName>
+    <RootNamespace>VexHub.Loader</RootNamespace>
+    <ApplicationIcon>Assets\vexhub.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Version>1.2.3</Version>
+    <Authors>VexHub</Authors>
+    <Product>VexHub Loader</Product>
+    <AssemblyTitle>VexHub Loader</AssemblyTitle>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\fonts\Roboto-Medium.ttf" />
+    <Resource Include="Assets\vexhub.ico" />
+  </ItemGroup>
+
+</Project>

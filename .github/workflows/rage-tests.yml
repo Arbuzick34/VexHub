@@ -1,0 +1,25 @@
+name: Rage tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Build and run solver tests
+        shell: powershell
+        run: |
+          Set-ExecutionPolicy Bypass -Scope Process -Force
+          .\rage\build.ps1
+
+      - name: Upload test binary
+        uses: actions/upload-artifact@v4
+        with:
+          name: rage_test
+          path: rage/build/rage_test.exe
+          if-no-files-found: error
